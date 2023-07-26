@@ -87,7 +87,7 @@ export const Form = () =>{
         }
     }
     const handleOnKeyDown = event =>{
-        if(event.key === 'Backspace'){
+        if(event.keyCode === 8){
             setCharLength(data => data < 200 ? data + 2 : 200);
         }
     }
