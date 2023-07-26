@@ -82,7 +82,9 @@ export const Form = () =>{
     const handleForm = (event, indicator) =>{
         const {name, value} = event.target;
         setFormInfo({...formInfo, [name]: value});
-        setCharLength(data => data > 0 ? data - 1 : 0);
+        if(indicator === 'first'){
+            setCharLength(data => data > 0 ? data - 1 : 0);
+        }
     }
     const handleOnKeyDown = event =>{
         if(event.key === 'Backspace'){
