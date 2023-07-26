@@ -50,6 +50,9 @@ const SubContainer = styled.div`
         & > .fact-input{
             width: 100%;
         }
+        & > .char-length{
+            display: none;
+        }
     }
 `
 
@@ -113,7 +116,7 @@ export const Form = () =>{
                 type="text" 
                 placeholder="Share a fact with the world..." 
             />
-            <Span>{charLength}</Span>
+            <Span className="char-length">{charLength}</Span>
         </SubContainer>
         <Input 
             name="source" 
