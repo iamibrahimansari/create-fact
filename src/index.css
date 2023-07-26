@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bacasime Antique', serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #444;
+  color: #fff;
+}
+
+#root{
+  margin: 3rem auto;
+  width: 90%;
+}
+
+.btn{
+  transition: transform 0.3s ease;
+}
+
+.btn:hover{
+  transform: rotate(-5deg) scale(1.1);
+}
